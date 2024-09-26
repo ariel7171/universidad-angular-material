@@ -93,7 +93,7 @@ export class ListaInscripcionesComponent implements OnInit {
     this.inscripcionForm = this._fb.nonNullable.group({
       estudiante_id: ['', Validators.required],
       curso_id: ['', Validators.required],
-      nota: ['', Validators.required]
+      nota: ['']
     });
   }
 
