@@ -1,0 +1,14 @@
+<section class="confirm-dialog">
+    <h4 mat-dialog-title>{{ data.title }}</h4>
+    <div class="message-container">
+        <div mat-dialog-content>
+            <p>{{ data.message }}</p>
+        </div>  
+    </div>  
+    <div mat-dialog-actions>  
+        <div class="button-container"> <!-- Contenedor para los botones -->  
+            <button mat-raised-button color="warn" (click)="onConfirmClick()">SI</button>  
+            <button mat-button (click)="onNoClick()">NO</button>  
+        </div>  
+    </div>  
+</section>  

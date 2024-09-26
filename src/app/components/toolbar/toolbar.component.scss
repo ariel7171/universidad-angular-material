@@ -1,0 +1,31 @@
+.spacer {  
+    flex: 1 1 auto;  
+}  
+
+mat-toolbar {  
+    background-color: #3f51b5 !important; // Color del tema  
+}  
+
+mat-button-toggle-group {  
+    border: none !important; // Eliminar el borde del grupo  
+}  
+
+.mat-button-toggle {  
+    color: white; // Color del texto  
+    background-color: #3f51b5; // Color de fondo  
+    border: none !important; // Eliminar bordes predeterminados  
+
+    &.mat-button-toggle-checked {  
+        background-color: rgba(255, 255, 255, 0.2); // Color de fondo seleccionado  
+        color: white; // Texto en el botón seleccionado  
+    }  
+
+    &:hover {  
+        background-color: rgba(255, 255, 255, 0.1); // Efecto hover  
+    }  
+}  
+
+.mat-button-toggle .mat-pseudo-checkbox,  
+.mat-button-toggle-checked .mat-pseudo-checkbox {  
+    display: none; // Ocultar el checkbox pseudo  
+}

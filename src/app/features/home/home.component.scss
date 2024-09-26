@@ -1,0 +1,84 @@
+.home-container {  
+    background-image: url('./img/background.jpeg'); // Cambia esto por la ruta de tu imagen  
+    background-size: cover;  
+    background-position: center;  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    position: relative;  
+
+    .overlay {  
+        background-color: rgba(0, 0, 0, 0.7); // Aumentar opacidad para mejor contraste  
+        color: white;  
+        padding: 60px; // Aumentar padding  
+        border-radius: 10px;  
+        //text-align: center;  
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); // Sombra para el contenedor  
+
+        header {  
+            margin-bottom: 40px; // Aumentar separación  
+
+            h1 {  
+                font-size: 2.5rem; // Aumentar tamaño  
+                margin: 0;  
+                color: #3f51b5; // Color de título  
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Sombra más pronunciada
+                text-align: center;
+            }  
+
+            h2 {  
+                font-size: 1rem; // Aumentar tamaño  
+                margin: 0;  
+                margin-top: 15px; // Aumentar separación  
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Sombra más pronunciada  
+                text-align: left;
+            }  
+        }  
+
+        .about-university {  
+            h3 {  
+                font-size: 1.5rem; // Aumentar tamaño  
+                margin-bottom: 20px;  
+                color: #3f51b5; // Color del subtítulo  
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Sombra más pronunciada  
+            }  
+
+            p {  
+                font-size: 0.7rem; // Aumentar tamaño  
+                line-height: 1.6; // Mejorar legibilidad  
+                margin: 10px 0;  
+            }  
+        }  
+
+        .courses {  
+            h3 {  
+                font-size: 1.5rem; // Aumentar tamaño  
+                margin-bottom: 20px;  
+                color: #3f51b5; // Color del subtítulo  
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Sombra más pronunciada  
+            }
+
+            p {  
+                font-size: 0.7rem; // Aumentar tamaño  
+                line-height: 1.6; // Mejorar legibilidad  
+                margin: 10px 0;  
+            }
+
+            .courses-list {  
+                
+                ul {  
+                    list-style-type: disc;  
+                    padding-left: 20px;  
+                    text-align: left; // Alinear texto a la izquierda  
+
+                    li {  
+                        font-size: 1rem !important; // Aumentar tamaño  
+                        line-height: 1.6; // Mejorar legibilidad  
+                        margin: 10px 0;  
+                    }
+                }  
+            }  
+        }  
+    }  
+}

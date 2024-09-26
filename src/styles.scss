@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-form-field {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+// .mat-mdc-snack-bar-container {
+
+//     &.snackbar-success {
+//       --mdc-snackbar-container-color: green;
+//       --mat-mdc-snack-bar-button-color: #fff;
+//       --mdc-snackbar-supporting-text-color: white;
+//     }
+
+//     &.snackbar-error {
+//         --mdc-snackbar-container-color: red;
+//         --mat-mdc-snack-bar-button-color: #fff;
+//         --mdc-snackbar-supporting-text-color: white;
+//       }
+//   }
+
+.snackbar-success {
+    .mdc-snackbar__surface {
+      background-color: #449835 !important;
+    }
+  
+    .mdc-snackbar__label {
+      color: white !important;
+      caret-color: transparent;
+    }
+
+    .mat-mdc-snack-bar-container .mdc-snackbar__surface {
+        border-radius: 8px !important;
+        cursor: default !important;
+      }
+  
+      .mat-mdc-button.mat-mdc-snack-bar-action {
+        color: #5768c4 !important;
+      }
+  }
+
+  .snackbar-error {
+    .mdc-snackbar__surface {
+      background-color: #b53f51 !important;
+    }
+  
+    .mdc-snackbar__label {
+      color: white !important;
+      caret-color: transparent;
+    }
+
+    .mat-mdc-snack-bar-container .mdc-snackbar__surface {
+        border-radius: 8px !important;
+        cursor: default !important;
+      }
+  
+      .mat-mdc-button.mat-mdc-snack-bar-action {
+        color: #5768c4 !important;
+      }
+  }

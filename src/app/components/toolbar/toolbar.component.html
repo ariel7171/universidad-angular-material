@@ -1,0 +1,67 @@
+<section>
+    <mat-toolbar color="primary">
+        <mat-button-toggle-group (change)="onToggleChange($event.value)" aria-label="Toolbar buttons"
+            [hideSingleSelectionIndicator]="true" [(value)]="selectedValue">
+            <mat-button-toggle value="home">
+
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+
+            </mat-button-toggle>
+
+            <mat-button-toggle value="estudiantes">
+
+                <mat-icon>list_alt</mat-icon>
+                <span>Estudiantes</span>
+
+            </mat-button-toggle>
+
+            <mat-button-toggle value="profesores">
+
+                <mat-icon>list_alt</mat-icon>
+                <span>Profesores</span>
+
+            </mat-button-toggle>
+
+            <mat-button-toggle value="cursos">
+
+                <mat-icon>list_alt</mat-icon>
+                <span>Cursos</span>
+
+            </mat-button-toggle>
+
+            <mat-button-toggle value="inscripciones">
+
+                <mat-icon>list_alt</mat-icon>
+                <span>Inscripciones</span>
+
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <ng-container *ngIf="selectedValue !== 'home'">
+            <span class="spacer"></span>
+            <a mat-button (click)="emitClick()">
+                <mat-icon>add_box</mat-icon>
+                <span>Nuevo</span>
+            </a>
+        </ng-container>
+    </mat-toolbar>
+
+    <ng-container *ngIf="selectedValue === 'home'">
+        <app-home></app-home>
+    </ng-container>
+    <ng-container *ngIf="selectedValue === 'estudiantes'">
+        <app-lista-estudiantes></app-lista-estudiantes>
+    </ng-container>
+    <ng-container *ngIf="selectedValue === 'profesores'">
+        <app-lista-profesores></app-lista-profesores>
+    </ng-container>
+    <ng-container *ngIf="selectedValue === 'cursos'">
+        <app-lista-cursos />
+    </ng-container>
+    <ng-container *ngIf="selectedValue === 'inscripciones'">
+        <app-lista-inscripciones />
+    </ng-container>
+
+
+</section>

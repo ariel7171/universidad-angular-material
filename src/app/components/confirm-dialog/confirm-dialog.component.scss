@@ -1,0 +1,66 @@
+
+.confirm-dialog {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center; // Centrar contenido  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Roboto, Arial, sans-serif;
+    cursor: default;
+    
+
+    .message-container {
+        border-top: #c7c7c7 1px solid;
+        padding: 16px;
+    } 
+
+    mat-dialog-title {  
+        font-size: 1.5rem;  
+        color: #fff; // Color blanco para el título  
+        background-color: #b53f51; // Fondo rojo  
+        width: 100%; // Ancho completo  
+        padding: 16px; // Espaciado interno  
+        //margin: 1px; // Sin margen  
+        text-align: center; // Centrar texto
+    }  
+
+    mat-dialog-content {  
+        font-size: 1rem;  
+        color: #333; // Color del texto  
+        margin: 20px 0; // Margen superior e inferior  
+        text-align: center; // Centrar texto
+    }  
+
+    mat-dialog-actions {  
+        display: flex;  
+        justify-content: center; // Centrar botones  
+        width: 100%; // Ancho completo
+
+    }  
+
+    button {  
+        &.mat-raised-button {  
+            background-color: #b53f51; // Color rojo para el botón "YES"  
+            color: #fff; // Texto blanco
+            &:hover {  
+                background-color: darken(#b53f51, 10%); // Oscurecer al pasar el mouse  
+            }  
+        }  
+
+        &.mat-button {  
+            background-color: #e0e0e0; // Color gris para el botón "NO"  
+            color: #000; // Texto negro  
+            &:hover {  
+                background-color: darken(#e0e0e0, 20%); // Oscurecer al pasar el mouse  
+            }  
+        }  
+    }
+
+    .button-container {  
+        display: flex;  
+        justify-content: center;  
+        gap: 80%; // Espaciado entre botones usando GAP  
+    }  
+} 

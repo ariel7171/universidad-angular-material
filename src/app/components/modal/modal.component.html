@@ -1,0 +1,50 @@
+<div mat-dialog-title>  
+    <h1>Formulario {{entity}}</h1>  
+</div>  
+<form [formGroup]="entityForm" (ngSubmit)="onSubmit()">  
+    <div mat-dialog-content class="content">  
+
+        <ng-container *ngFor="let field of fields; let i = index">  
+            <div class="row">  
+                <mat-form-field class="full-width" appearance="outline">  
+                    <mat-label>{{field.label}}</mat-label>  
+                    <input matInput [type]="field.type" [formControlName]="field.name"/>  
+                </mat-form-field>  
+            </div>  
+        </ng-container>  
+        
+        <div mat-dialog-actions class="actions">  
+            <button mat-raised-button [disabled]="!entityForm.valid" type="submit" color="primary">{{getTitle()}}</button>  
+            <button mat-raised-button [mat-dialog-close]="false" type="button">Cancelar</button>  
+        </div>  
+    </div>  
+</form> 
+
+
+        <!-- <div class="row">
+            <mat-form-field class="full-with" appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" formControlName="nombre">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="full-with" appearance="outline">
+                <mat-label>Apellido</mat-label>
+                <input matInput type="text" formControlName="apellido">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="full-with" appearance="outline">
+                <mat-label>DNI</mat-label>
+                <input matInput type="text" formControlName="dni">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="full-with" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email">
+            </mat-form-field>
+        </div> -->
